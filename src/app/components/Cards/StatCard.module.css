@@ -4,16 +4,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 2vw;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-    /* color: white; Ensure text color contrasts well with the background */
+    background-color: rgba(255, 255, 255, 0.2);
     width: 20vw;
     height: 15vh;
-    /* margin-left: 5vh; */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjust shadow for better visibility */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
 }
-
 
 .iconContainer {
     flex: 1;
@@ -34,16 +32,92 @@
 }
 
 .title {
-    font-size: 14px;
+    font-size: 1.vw;
     font-weight: bold;
 }
 
 .value {
-    font-size: 24px;
-    margin: 5px 0;
+    font-size: 2vw;
+    margin: 0.5vw 0;
 }
 
 .dateRange {
-    font-size: 12px;
+    font-size: 1vw;
     color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .card {
+        width: 25vw;
+        height: 17vh;
+    }
+
+    .icon {
+        font-size: 4vw;
+    }
+
+    .title {
+        font-size: 2vw;
+    }
+
+    .value {
+        font-size: 2.5vw;
+    }
+
+    .dateRange {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        width: 60vw;
+        height: auto;
+        padding: 4vw;
+    }
+
+    .icon {
+        font-size: 6vw;
+    }
+
+    .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 4vw;
+    }
+
+    .value {
+        font-size: 6vw;
+    }
+
+    .dateRange {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 80vw;
+    }
+
+    .icon {
+        font-size: 8vw;
+    }
+
+    .title {
+        font-size: 5vw;
+    }
+
+    .value {
+        font-size: 7vw;
+    }
+
+    .dateRange {
+        font-size: 3vw;
+    }
 }

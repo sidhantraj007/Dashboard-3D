@@ -133,6 +133,8 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .ordersContainer {
+    display: flex;
+    flex-direction: column;
     width: 90vw; /* Adjust width for smaller screens */
     padding: 0.5rem;
   }
