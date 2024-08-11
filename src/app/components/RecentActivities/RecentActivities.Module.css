@@ -1,0 +1,93 @@
+.activitiesContainer {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 35vw; /* Occupies 35% of the viewport width */
+  background-color: #151518;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding in width calculation */
+  /* padding: 20px; */
+  margin: 0vw 0vw 2vh 3vw;
+}
+
+.head3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.activityItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #151518;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.iconContainer {
+  width: 3rem; /* Adjusted for better responsiveness */
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 1rem; /* Adjusted spacing */
+}
+
+.icon {
+  color: #fff;
+  font-size: 2rem; /* Adjusted for better visibility */
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  font-size: 0.8rem;
+  color: white;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin: 5px 0;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .activitiesContainer {
+    width: 90vw; /* Adjust width for smaller screens */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .iconContainer {
+    width: 2.5rem; /* Adjust icon size */
+    height: 2.5rem;
+  }
+
+  .icon {
+    font-size: 1.5rem; /* Adjust icon size */
+  }
+
+  .head3 {
+    font-size: 1.25rem; /* Adjust heading size */
+  }
+
+  .title {
+    font-size: 0.875rem; /* Adjust title size */
+  }
+
+  .description {
+    font-size: 0.8rem; /* Adjust description size */
+  }
+}

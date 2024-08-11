@@ -1,0 +1,49 @@
+/* components/StatCard.module.css */
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    /* color: white; Ensure text color contrasts well with the background */
+    width: 20vw;
+    height: 15vh;
+    /* margin-left: 5vh; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjust shadow for better visibility */
+}
+
+
+.iconContainer {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.icon {
+    font-size: 3vw;
+}
+
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.value {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.dateRange {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}

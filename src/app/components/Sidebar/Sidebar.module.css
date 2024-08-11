@@ -1,0 +1,60 @@
+.sidebar {
+  height: 150vh;
+  background-color: #000000;
+  color: white; /* Tailwind's gray-400 */
+  width: 5vw; /* Tailwind's w-20 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0; /* Tailwind's py-4 */
+  border: #374151 1px solid;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* 3D shadow */
+
+}
+
+.sidebar:hover {
+  transform: perspective(1000px) rotateY(0deg); /* Straighten out on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+}
+
+.iconGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2rem; /* Adjusted to use gap for consistent spacing */
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem; /* Tailwind's p-2 */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.iconButton:hover {
+  background-color: #374151; /* Tailwind's gray-700 */
+  border-radius: 0.375rem; /* Tailwind's rounded-md */
+  transform: translateZ(10px); /* Lift icon slightly on hover for 3D effect */
+}
+
+.icon {
+  height: 1.5rem; /* Tailwind's h-6 */
+  width: 1.5rem; /* Tailwind's w-6 */
+  color: white; /* Tailwind's gray-400 */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+  color: white;
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+.bottomIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* Adjusted to use gap for consistent spacing */
+  margin-top: auto;
+}

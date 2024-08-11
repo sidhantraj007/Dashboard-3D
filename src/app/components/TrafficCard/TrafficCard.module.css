@@ -1,0 +1,134 @@
+/* Container for the Traffic Chart component */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 50vh; /* Consistent height */
+    width: 20vw; /* Full width for responsiveness */
+    max-width: 400px; /* Limit the maximum width */
+    background-color: #151518;
+    /* background-color: aliceblue; */
+    padding: 20px;
+    margin-bottom: 2vw;
+    border-radius: 20px;
+    margin: 1vw 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative; /* Relative positioning for icon centering */
+}
+
+/* Container for the chart and the icon */
+.chartContainer {
+    /* position: re; */
+    margin-top: 5vw;
+    width: 100%; /* Ensures it takes full width of the parent */
+    height: 100%; /* Ensures it takes full height of the parent */
+}
+
+
+/* Icon styling */
+.icon {
+    color: white;
+    font-size: 5rem;
+}
+
+/* Labels container for below the chart */
+.labels {
+    position: absolute;
+    display: flex;
+    flex-direction: row; /* Stack labels vertically */
+    align-items: flex-start; /* Align labels to the start */
+    justify-content: center; /* Center labels */
+    margin-top: 2rem; /* Space between the chart and the labels */
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #E0E0E0; /* Light grey for better contrast */
+    width: 100%; /* Ensure labels take full width */
+}
+
+/* Individual label styling */
+.labels div {
+    margin-bottom: 5px;
+}
+
+/* Facebook-specific label color */
+.facebook {
+    color: #AA6CFC;
+}
+
+/* YouTube-specific label color */
+.youtube {
+    color: #FC5A5A;
+}
+
+/* Direct Search-specific label color */
+.directSearch {
+    color: #1ED5A9;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .container {
+        height: auto; /* Allow height to adjust based on content */
+        width: 65vw; /* Responsive width on smaller screens */
+        max-width: none; /* Remove max-width for full responsiveness */
+        /* padding: 15px;  */
+        margin-left: 1vw;
+    }
+
+    .iconWrapper {
+        width: 40px; /* Smaller icon on tablets */
+        height: 40px;
+    }
+
+    .icon {
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    .labels {
+        font-size: 13px; /* Slightly smaller font size on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto; /* Allow height to adjust based on content */
+        width: 90vw; /* Full width on mobile */
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .iconWrapper {
+        width: 35px; /* Smaller icon on mobile */
+        height: 35px;
+    }
+
+    .icon {
+        font-size: 18px; /* Adjust icon size */
+    }
+
+    .labels {
+        font-size: 12px; /* Smaller font size on mobile */
+        margin-top: 5px; /* Adjust space between chart and labels */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        height: auto; /* Allow height to adjust based on content */
+        width: 95vw; /* Almost full width on very small screens */
+        padding: 8px; /* Further reduce padding for smaller screens */
+    }
+
+    .iconWrapper {
+        width: 30px; /* Even smaller icon on small mobile devices */
+        height: 30px;
+    }
+
+    .icon {
+        font-size: 16px; /* Adjust icon size */
+    }
+
+    .labels {
+        font-size: 11px; /* Smaller font size on very small screens */
+    }
+}

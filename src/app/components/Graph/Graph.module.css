@@ -1,0 +1,144 @@
+.container {
+  background-color: #151518 ;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 65vw;
+  margin: 1vw 2vw 1vw 0;
+  height: 50vh; /* Adjust height to fit within the viewport height */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; /* Ensure padding is included in the width and height */
+  margin-left: 3vw;
+}
+
+.detailsAndChart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.details {
+  flex: 1;
+  margin-right: 20px;
+  min-width: 150px; /* Minimum width to prevent collapse on small screens */
+}
+
+.chart {
+  flex: 2;
+  position: relative;
+  height: 100%; /* Full height of the container */
+}
+
+.canvas {
+  display: block;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 10px; /* Add space between stats */
+  flex: 1;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.stat p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.stat h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.para {
+  font-size: 16px;
+  color:white;
+}
+
+.head1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.summaryButton {
+  background-color: #6254ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.summaryButton:hover {
+  background-color: #4d43d2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .detailsAndChart {
+    flex-direction: column;
+  }
+
+  .details {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .chart {
+    height: 300px; /* Adjust chart height for smaller screens */
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stat {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .details {
+    font-size: 14px;
+  }
+
+  .head1 {
+    font-size: 28px;
+  }
+
+  .summaryButton {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .chart {
+    height: 200px; /* Adjust chart height for very small screens */
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}

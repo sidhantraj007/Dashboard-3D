@@ -1,0 +1,142 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 70px; /* Increased height from 50px to 70px */
+  width: 95vw; /* Adjusted width to leave space for the sidebar */
+  /* background-color: #e60000; */
+  color: #fff;
+  border: #333 1px solid;
+  padding: 0 1rem; /* Add padding for better spacing */
+}
+
+/* Left section */
+.navbarLeft {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar Title */
+.navbarTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Dropdown Icon */
+.dropdownIcon {
+  color: #888;
+}
+
+/* Center section (Search) */
+.searchContainer {
+  position: relative;
+  flex: 1; /* Allow the search container to grow and shrink */
+  max-width: 300px; /* Set a maximum width */
+  margin: 0 auto; /* Center align the search container */
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.5rem 2.5rem;
+  background-color: #333;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: #bbb;
+  border: none;
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1.25rem;
+  width: 1.25rem;
+  color: #555;
+}
+
+/* Right section */
+.navbarRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto; /* Pushes the right section to the far right */
+}
+
+/* Notifications */
+.notificationContainer {
+  position: relative;
+}
+
+.notificationIcon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #bbb;
+}
+
+.notificationBadge {
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  background-color: #e60000;
+  color: #fff;
+  font-size: 0.75rem;
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+/* Date Info */
+.dateInfo {
+  font-size: 0.875rem;
+  color: #bbb;
+}
+
+/* User Profile */
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profileImage {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 9999px;
+}
+
+.profileName {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.profileUsername {
+  font-size: 0.75rem;
+  color: #bbb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .navbarRight {
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+
+  .searchContainer {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
